@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+} 
+.heading{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin: 2rem;
+}
+.heroes_container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem;
+    gap: 1rem;
+}
+.heroes_left{
+    border: 2px solid black;
+    padding: 1rem;
+    width: 400px;
+ }
+.heroes_right{
+   border: 2px solid black;
+   padding: 1rem;
+   width: 400px;
+}
+.heroes_right button{
+    background-color: #3498db;
+    height: 30px;
+}
+.heroes_left button{
+    background-color: #3498db;
+    height: 30px;
+}
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+.repository_user{
+    text-align: center;
+    margin: 1rem;
+}
+.repository_user button{
+    height: 30px;
+    border-radius: 5px;
+}
+#username{
+    height: 30px;
+    width: 300px;
+}
+.repo{
+margin-bottom: 2rem;
+}
+#pagination{
+    margin: 1rem;
+    margin-bottom: 1rem;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.repository {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #fff;
+}
